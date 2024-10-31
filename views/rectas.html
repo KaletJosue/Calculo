@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rectas Paralelas y Perpendiculares</title>
+    <link rel="stylesheet" href="/styles/rectas.css">
+    <link rel="shortcut icon" href="/assets/regla.png" type="image/x-icon">
+    <!-- iconos -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="https://kit.fontawesome.com/460146b1b8.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+
+<body>
+    <div class="head">
+        <img src="/assets/head.png" class="img_head">
+        <h1>Rectas Paralelas y Perpendiculares</h1>
+    </div>
+
+    <div class="header">
+        <ul class="menu">
+            <li><a href="/index.html">Inicio></a></li>
+            <li><a href="/views/rectas.html">Rectas Paralelas y perpendiculares></a></li>
+            <li><a href="/views/dominio.html">dominio y rango></a></li>
+            <li><a href="">limites></a></li>
+            <li><a href="/views/funcion.html">funcion compuesta></a></li>
+            <li><a href="/views/derivadas.html">derivadas></a></li>
+        </ul>
+        <div class="bars__menu">
+            <span class="line1__bars-menu"></span>
+            <span class="line2__bars-menu"></span>
+            <span class="line3__bars-menu"></span>
+        </div>
+    </div>
+
+    <div class="hero">
+        <h1>Rectas Paralelas</h1>
+
+        <div class="recta_paralela">
+            <h3>Dos rectas son paralelas cuando su inclinacion o pendiente es igual</h3>
+            <div class="in_recta-paralela">
+                <div class="lineas">
+                    <div class="linea">
+                        <div class="hr">
+                            <hr>
+                            <hr>
+                        </div>
+                        <p>m</p>
+                    </div>
+                    <div class="linea">
+                        <div class="hr">
+                            <hr>
+                            <hr>
+                        </div>
+                        <p>m</p>
+                    </div>
+                </div>
+                <div class="pendiente">
+                    <p>y = m x ± b</p>
+                    <i class="ph ph-arrow-down"></i>
+                    <p>pendiente</p>
+                </div>
+                <div class="ecuacion">
+                    <p>3x + 2y + 5 = 0</p>
+                    <p>2y = -3x -5</p>
+                    <p>y = -3/2 -5/2</p>
+                    <p>m = -3/2</p>
+                </div>
+                <div class="text">
+                    *Despeja “y” para poder encontrar m*
+                </div>
+            </div>
+        </div>
+
+        <div class="encontrar">
+            <h3>Encontrar la ecuacion de la paralela a:</h3>
+            <p>3y +5x -2 = 0 que pasa por los puntos p (-1, 2)</p>
+        </div>
+
+        <div class="pasos">
+            <div class="paso">
+                <h3>paso 1:</h3>
+                <p>Despejamos “y” de la ecuacion para poder encontrar m</p>
+                <div class="ecuacion_pasos">
+                    <h4>3y = -5x -2</h4>
+                    <h4>y = -5x/3x -2/3</h4>
+                    <h4>m = -5/3</h4>
+                </div>
+            </div>
+            <div class="paso dos">
+                <h3>paso 2:</h3>
+                <p>Reemplazamos en la ecuacion general m y en el punto</p>
+                <div class="ecuacion_pasos">
+                    <div class="ladoiz">
+                        <h4>(y-y1) = m (x-x1)</h4>
+                        <h4>(y - 2) = -5/3 (x + 1)</h4>
+                        <h4>3y +5x = 6-1</h4>
+                        <h4>3y +5x = 1</h4>
+                    </div>
+                    <div class="ladode">
+                        <h4>
+                            *utiliza la siguente formula: <br> (y-y1) = m (x-x1)*
+                        </h4>
+                    </div>
+                </div>
+            </div>
+            <div class="paso">
+                <h3>paso 3:</h3>
+                <p>igualamos a 0 y despues graficamos;</p>
+                <div class="ecuacion_pasos">
+                    <h4>*3y +5x = 2</h4>
+                    <h4>*3y +5x = 1</h4>
+                </div>
+            </div>
+        </div>
+        <h3 class="compro">ahora comprueba si la recta si es paralela: geogebra</h3>
+
+        <h1>Rectas perpendiculares</h1>
+
+        <div class="pasos">
+            <div class="paso">
+                <h3>Encontrar la ecuacion de la perpendicular a:</h3>
+                <p>3y +5x -2 = 0 que pasa por los puntos p (-1, 2)</p>
+                <div class="ecuacion_pasos">
+                    <h4>3y = -5x -2</h4>
+                    <h4>y = -5x/3x -2/3</h4>
+                    <h4>m = -5/3</h4>
+                </div>
+            </div>
+            <div class="paso">
+                <h3>Reemplazamos en la ecuacion general m1 y en el punto</h3>
+                <div class="ecuacion_pasos">
+                    <h4>(y-y1) = m (x-x1)</h4>
+                    <h4>(y - 2) = -3/5 (x + 1)</h4>
+                    <h4>5y-10 = 3x + 3</h4>
+                    <h4>5y - 3x = 10 + 3</h4>
+                    <h4>5y -3x = 13</h4>
+                </div>
+            </div>
+            <div class="paso">
+                <h3>ahora econtramos m1:</h3>
+                <div class="ecuacion_pasos">
+                    <h4>m1 <i class="ph ph-arrow-right"></i> -1/m</h4>
+                    <h4>m1 <i class="ph ph-arrow-right"></i> -1/-5/3</h4>
+                    <h4>m1 <i class="ph ph-arrow-right"></i> 3/5</h4>
+                </div>
+            </div>
+            <div class="paso">
+                <p>igualamos a 0 y despues graficamos</p>
+                <div class="ecuacion_pasos">
+                    <h4>*3y +5x = 2</h4>
+                    <h4>*3y +5x = 1</h4>
+                </div>
+            </div>
+        </div>
+
+        <h3 class="compro">ahora comprueba si la recta si es perpendicular: geogebra</h3>
+
+        <p class="compro2">Para que puedas comprender de mejor manera el tema y practirar por tu cuenta te adjuntamos un
+            pdf con ejercicios paso apaso</p>
+
+        <a href="/assets/Saxophone.pdf" target="_blank" class="ejer">
+            <i class="ph ph-download-simple"></i>
+            <p>ejercicio Rectas paralelas y perpendiculares </p>
+        </a>
+    </div>
+
+    <div class="plus">
+        <i class="ph-fill ph-users"></i>
+    </div>
+
+    <div class="barra">
+        <p class="close_barra">x</p>
+        <div class="integrantes">
+            <h1>Participantes del proyecto</h1>
+            <div class="integrante">
+                <img src="/assets/profile-0.jpg" alt="">
+                <p>Gabriel Alejandro Ayala Aguilar</p>
+            </div>
+            <div class="integrante">
+                <img src="/assets/profile-1.jpg" alt="">
+                <p>Andres Camilo Perez Silva</p>
+            </div>
+            <div class="integrante">
+                <img src="/assets/profile-2.jpg" alt="">
+                <p>Samuel Andres Usta Hernandez</p>
+            </div>
+            <div class="integrante">
+                <img src="/assets/profile-3.jpg" alt="">
+                <p>Daniel Camilo Davila Blanco</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="/controller/rectas.js"></script>
+</body>
+
+</html>

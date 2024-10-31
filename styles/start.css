@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Walter+Turncoat&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Walter Turncoat";
+}
+
+html::-webkit-scrollbar {
+    width: 0;
+}
+
+.head {
+    position: relative;
+}
+
+.head h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+.head img {
+    width: 100%;
+}
+
+.header ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.header ul li a {
+    color: black;
+}
+
+.header .bars__menu {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.header .bars__menu span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    margin-top: .2rem;
+    background-color: rgb(0, 0, 0);
+    transform-origin: 0px 100%;
+    transition: all .2s ease;
+}
+
+.activeline1__bars-menu {
+    transform: rotate(45deg) translate(-2px, 1px);
+    background-color: white;
+}
+
+.activeline2__bars-menu {
+    margin-right: 30px;
+    opacity: 0;
+    background-color: white;
+}
+
+.activeline3__bars-menu {
+    transform: rotate(-45deg) translate(-9px, 5px);
+    background-color: white;
+}
+
+.hero {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 10rem;
+    text-align: start;
+}
+
+.hero h1 {
+    font-size: 60px;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    margin-bottom: 1rem;
+}
+
+.hero .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.hero .btn a {
+    padding: .7rem 3rem;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    border-radius: 10px;
+    border: solid 2px black;
+    transition: all .2s ease;
+}
+
+.hero .btn a:hover {
+    transform: translateX(20px);
+    background-color: transparent;
+    color: black;
+}
+
+.plus {
+    position: fixed;
+    right: 30px;
+    bottom: 25px;
+    height: 50px;
+    width: 50px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.barra {
+    position: fixed;
+    top: 0;
+    right: -100vw;
+    background-color: white;
+    width: 300px;
+    height: 100vh;
+    box-shadow: 1px 1px 1rem black;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: start;
+    transition: all .5s ease;
+    z-index: 40;
+}
+
+.barra.active {
+    right: 0;
+}
+
+.barra p {
+    font-size: 30px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.barra .integrantes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+    padding: 0 3rem;
+}
+
+.barra .integrantes h1 {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.barra .integrantes .integrante {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.barra .integrantes .integrante img {
+    aspect-ratio: 1/1;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.barra .integrantes .integrante p {
+    font-size: 13px;
+    cursor: auto;
+}
+
+@media (width < 1250px) {
+    .hero h1 {
+        text-align: center;
+        line-height: 50px;
+        margin-bottom: 2rem;
+    }
+}
+
+@media (width < 1000px) {
+    .hero {
+        padding: 5rem;
+    }
+
+    .header ul {
+        position: fixed;
+        margin-top: 0;
+        top: 0;
+        left: -100vw;
+        background-color: rgba(0, 0, 0, 0.993);
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: all .2s ease;
+    }
+
+    .header ul.active {
+        left: 0;
+    }
+
+    .header ul li a {
+        color: white;
+    }
+
+    .header {
+        position: relative;
+    }
+
+    .header .bars__menu {
+        position: absolute;
+        right: 30px;
+        top: 25px;
+    }
+
+    .header .bars__menu {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (width < 900px) {
+    .hero .btn {
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+        margin-top: 2rem;
+    }
+
+    .head {
+        height: 400px;
+    }
+
+    .head h1 {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 5rem;
+        background-image: linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.897),
+            rgba(0, 0, 0, 0.863)
+        ) 
+        ,url('/assets/head.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+}
+
+@media (width < 700px) {
+    .hero {
+        padding: 5rem 2rem;
+        text-align: center;
+    }
+}
+
+@media (width < 500px) {
+    .head h1 {
+        padding: 0 1rem;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+        line-height: 40px;
+    }
+}
