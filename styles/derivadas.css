@@ -126,6 +126,13 @@ html::-webkit-scrollbar {
     transform: translateX(20px);
 }
 
+.hero .form_h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+}
+
 .plus {
     position: fixed;
     right: 30px;
